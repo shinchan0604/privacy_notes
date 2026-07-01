@@ -1,3 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f3f7f6;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.app {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #244855;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 30px rgba(36, 72, 85, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 14px;
+
+    color: #1f2937;
+    background: #ffffff;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+    color: #94a3b8;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    outline: none;
+
+    border-color: #3d8d7a;
+    box-shadow: 0 0 0 4px rgba(61,141,122,0.15);
+}
+
+.form-container textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.save-btn {
+    align-self: flex-end;
+
+    padding: 12px 25px;
+
+    background: #3d8d7a;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.save-btn:hover {
+    background: #2e6f61;
+    transform: translateY(-2px);
+}
+
+.toolbar {
+    max-width: 700px;
+    margin: 30px auto;
+
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.toolbar input {
+    flex: 1;
+
+    padding: 12px 18px;
+
+    color: #1f2937;
+    background: white;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.toolbar input::placeholder {
+    color: #94a3b8;
+}
+
+.toolbar input:focus {
+    outline: none;
+    border-color: #3d8d7a;
+    box-shadow: 0 0 0 4px rgba(61,141,122,0.15);
+}
+
+.toolbar button {
+    padding: 10px 18px;
+
+    background: white;
+    color: #475569;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.toolbar button:hover {
+    background: #eef6f4;
+    color: #244855;
+}
+
+.toolbar button.active {
+    background: #3d8d7a;
+    color: white;
+    border-color: #3d8d7a;
+}
+
+.notes-grid {
+    max-width: 900px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.note-card {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 25px rgba(36,72,85,0.08);
+
+    transition: all 0.3s ease;
+}
+
+.note-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(36,72,85,0.15);
+}
+
+.note-card h3 {
+    color: #244855;
+    margin-bottom: 10px;
+}
+
+.note-card p {
+    color: #475569;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.buttons button {
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 8px 14px;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.buttons button:hover {
+    transform: translateY(-2px);
+}
+
+.edit-btn {
+    background: #3d8d7a;
+}
+
+.edit-btn:hover {
+    background: #2e6f61;
+}
+
+.delete-btn {
+    background: #c44536;
+}
+
+.delete-btn:hover {
+    background: #a6372b;
+}
+
+.pin-btn {
+    background: #5b8fb9;
+}
+
+.pin-btn:hover {
+    background: #46769b;
+}
+
+.archive-btn {
+    background: #d4a017;
+}
+
+.archive-btn:hover {
+    background: #b88912;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;

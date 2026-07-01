@@ -145,7 +145,7 @@ useEffect(() => {
       onChange={(e) => setContent(e.target.value)}
     />
     
-    <button onClick={handleSave}>
+    <button className="save-btn" onClick={handleSave}>
     {editingId === null ? "Save" : "Update"}
     </button>
 
@@ -197,19 +197,19 @@ useEffect(() => {
 <small>{note.createdAt}</small>
      <div className="card-footer">
     <div className="buttons">
-        <button onClick={() => handleEdit(note)}>
+        <button className="edit-btn" onClick={() => handleEdit(note)}>
             Edit
         </button>
 
-        <button onClick={() => handleDelete(note.id)}>
+        <button className="delete-btn" onClick={() => handleDelete(note.id)}>
             Delete
         </button>
 
-        <button onClick={() => handlePin(note.id)}>
+        <button className="pin-btn" onClick={() => handlePin(note.id)}>
           {note.pinned ? "Unpin" : "Pin"}
         </button>
 
-        <button onClick={() => handleArchive(note.id)}>
+        <button className="archive-btn" onClick={() => handleArchive(note.id)}>
     {note.archived ? "Unarchive" : "Archive"}
 </button>
 </div>
